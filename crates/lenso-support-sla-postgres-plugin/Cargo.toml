@@ -1,0 +1,47 @@
+[package]
+name = "lenso-support-sla-postgres-plugin"
+version = "0.1.0"
+description = "PostgreSQL-backed Support SLA Plugin for Lenso."
+edition.workspace = true
+license.workspace = true
+publish = true
+repository.workspace = true
+rust-version.workspace = true
+
+[package.metadata.lenso]
+plugin-id = "lenso.support-sla.postgres"
+root-slot = "support-sla"
+
+[features]
+default = []
+postgres-acceptance = []
+
+[dependencies]
+futures.workspace = true
+lenso.workspace = true
+lenso-auth-sdk.workspace = true
+lenso-capability-access-control.workspace = true
+lenso-capability-jobs.workspace = true
+lenso-capability-organization-membership.workspace = true
+lenso-capability-secrets.workspace = true
+lenso-capability-support-sla = { version = "0.1.0", path = "../lenso-capability-support-sla" }
+lenso-kernel.workspace = true
+lenso-plugin-authoring-current.workspace = true
+lenso-postgres-kit.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+sqlx.workspace = true
+thiserror.workspace = true
+time.workspace = true
+uuid.workspace = true
+zeroize.workspace = true
+
+[dev-dependencies]
+lenso-app-plan.workspace = true
+lenso-native-adapter.workspace = true
+lenso-runner.workspace = true
+tokio.workspace = true
+
+[lints]
+workspace = true

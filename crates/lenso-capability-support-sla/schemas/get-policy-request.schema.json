@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","additionalProperties":false,"required":["organization_id","policy_id"],"properties":{"organization_id":{"type":"string","minLength":1,"maxLength":512},"policy_id":{"type":"string","minLength":1,"maxLength":512}}}
