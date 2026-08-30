@@ -1,0 +1,19 @@
+{
+  "id": "lenso.support-sla@1",
+  "version": "1.0.0",
+  "portable": true,
+  "cross_lane_transfer": true,
+  "operations": [
+    { "name": "create_policy", "interaction": "request", "request_schema": "schemas/create-policy-request.schema.json", "response_schema": "schemas/policy-response.schema.json", "domain_error_schema": "schemas/mutation-error.schema.json" },
+    { "name": "get_policy", "interaction": "request", "request_schema": "schemas/get-policy-request.schema.json", "response_schema": "schemas/policy-response.schema.json", "domain_error_schema": "schemas/read-error.schema.json" },
+    { "name": "list_policies", "interaction": "request", "request_schema": "schemas/list-policies-request.schema.json", "response_schema": "schemas/list-policies-response.schema.json", "domain_error_schema": "schemas/read-error.schema.json" },
+    { "name": "update_policy", "interaction": "request", "request_schema": "schemas/update-policy-request.schema.json", "response_schema": "schemas/policy-response.schema.json", "domain_error_schema": "schemas/mutation-error.schema.json" },
+    { "name": "archive_policy", "interaction": "request", "request_schema": "schemas/archive-policy-request.schema.json", "response_schema": "schemas/policy-response.schema.json", "domain_error_schema": "schemas/mutation-error.schema.json" },
+    { "name": "observe_case_snapshot", "interaction": "request", "request_schema": "schemas/observe-case-snapshot-request.schema.json", "response_schema": "schemas/observation-response.schema.json", "domain_error_schema": "schemas/observation-error.schema.json" },
+    { "name": "observe_case_message", "interaction": "request", "request_schema": "schemas/observe-case-message-request.schema.json", "response_schema": "schemas/observation-response.schema.json", "domain_error_schema": "schemas/observation-error.schema.json" },
+    { "name": "reconcile", "interaction": "request", "request_schema": "schemas/reconcile-request.schema.json", "response_schema": "schemas/reconcile-response.schema.json", "domain_error_schema": "schemas/reconcile-error.schema.json" },
+    { "name": "get_clock", "interaction": "request", "request_schema": "schemas/get-clock-request.schema.json", "response_schema": "schemas/clock-response.schema.json", "domain_error_schema": "schemas/read-error.schema.json" },
+    { "name": "list_clocks", "interaction": "request", "request_schema": "schemas/list-clocks-request.schema.json", "response_schema": "schemas/list-clocks-response.schema.json", "domain_error_schema": "schemas/read-error.schema.json" },
+    { "name": "list_breaches", "interaction": "request", "request_schema": "schemas/list-breaches-request.schema.json", "response_schema": "schemas/list-breaches-response.schema.json", "domain_error_schema": "schemas/read-error.schema.json" }
+  ]
+}
