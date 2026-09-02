@@ -1,6 +1,6 @@
 [package]
 name = "lenso-capability-support-sla"
-version = "0.1.0"
+version = "0.1.1"
 description = "Portable Support SLA Capability for Lenso applications."
 edition.workspace = true
 license.workspace = true

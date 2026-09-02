@@ -856,7 +856,7 @@ dependencies = [
 
 [[package]]
 name = "lenso-capability-support-sla"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "futures",
  "lenso-contract-runtime",
@@ -1000,7 +1000,7 @@ dependencies = [
 
 [[package]]
 name = "lenso-support-sla-postgres-plugin"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "futures",
  "lenso",
