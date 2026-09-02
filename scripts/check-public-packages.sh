@@ -14,8 +14,7 @@ for manifest in crates/*/Cargo.toml; do
 done
 
 "$cargo_bin" package "${flags[@]}" -p lenso-capability-support-sla
-"$cargo_bin" package "${flags[@]}" --no-verify -p lenso-support-sla-postgres-plugin \
-  --config 'patch.crates-io.lenso-capability-support-sla.path="crates/lenso-capability-support-sla"'
+"$cargo_bin" package "${flags[@]}" -p lenso-support-sla-postgres-plugin
 
 target="$($cargo_bin metadata --no-deps --format-version=1 | python3 -c 'import json,sys; print(json.load(sys.stdin)["target_directory"])')"
 for package in lenso-capability-support-sla lenso-support-sla-postgres-plugin; do
